@@ -1,0 +1,68 @@
+import { Employee } from "./types/employee";
+
+export const employees: Employee[] = [
+  {
+    id: 1,
+    firstName: "Özgür",
+    lastName: "Çiriş",
+    title: "Frontend Developer",
+    voteCount: 10,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 2,
+    firstName: "Selin",
+    lastName: "Kaya",
+    title: "Backend Developer",
+    voteCount: 8,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 3,
+    firstName: "Mert",
+    lastName: "Demir",
+    title: "Full Stack Developer",
+    voteCount: 7,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 4,
+    firstName: "Aslı",
+    lastName: "Yılmaz",
+    title: "UI/UX Designer",
+    voteCount: 6,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 5,
+    firstName: "Emre",
+    lastName: "Aksoy",
+    title: "Data Scientist",
+    voteCount: 5,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 6,
+    firstName: "Gizem",
+    lastName: "Ergün",
+    title: "Frontend Developer",
+    voteCount: 0,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 7,
+    firstName: "Efe",
+    lastName: "Kurt",
+    title: "Backend Developer",
+    voteCount: 0,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+  {
+    id: 8,
+    firstName: "Aylin",
+    lastName: "Şahin",
+    title: "Full Stack Developer",
+    voteCount: 0,
+    image: "https://picsum.photos/id/1/200/300",
+  },
+];
