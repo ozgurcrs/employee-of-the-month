@@ -4,7 +4,7 @@ import { ApiResponse, Employee } from "./types/employee";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: `https://employee-of-the-month-3q9q-git-main-ozgurcrs.vercel.app/graphql`,
+  uri: `https://employee-of-the-month-3q9q-git-main-ozgurcrs.vercel.app/api/graphql`,
   cache: new InMemoryCache(),
 });
 
