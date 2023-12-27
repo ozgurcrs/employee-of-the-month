@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const EmployeeCard = styled.div`
   width: 20%;
-  height: 400px;
+  height: 450px;
   border: 1px solid #d2d2d2;
   border-radius: 12px;
   min-width: 20%;
@@ -11,6 +11,13 @@ const EmployeeCard = styled.div`
   position: relative;
   transition: 200ms;
   user-select: none;
+  overflow: hidden;
+
+  & > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   &:hover {
     box-shadow: 0 1px 5px 10px #f1f1f1;
@@ -39,7 +46,7 @@ const ActionButton = styled.div`
   visibility: hidden;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   transition: 200ms;
 
   & > svg {
@@ -60,19 +67,22 @@ const Score = styled.div`
   align-items: center;
   font-size: 14px;
   color: #4a4a4a;
+  background: #fff;
+  z-index: 999;
 `;
 
 const Details = styled.div`
   width: 100%;
-  height: 30px;
+  height: auto;
   position: absolute;
-  top: 4px;
+  top: 0;
   padding: 12px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: #4a4a4a;
+  background: #fff;
 
   & > span:last-child {
     font-size: 14px;
@@ -87,8 +97,13 @@ const Medal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 48px;
   color: #ffd700;
 `;
 
-export { EmployeeCard, ActionButton, Score, Details, Medal };
+const CardContainer = styled.div`
+  width: 100%;
+  height: 400px;
+`;
+
+export { EmployeeCard, ActionButton, Score, Details, Medal, CardContainer };

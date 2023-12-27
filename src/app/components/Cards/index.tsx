@@ -33,7 +33,14 @@ export const Cards: FC<Props> = ({ employeeList }) => {
   return (
     <EmployeeCards>
       {sortedEmployees.map((item: Employee, index: number) => {
-        return <Card key={index} />;
+        return (
+          <Card
+            key={index}
+            employee={item}
+            isLeader={index === 0}
+            handleVote={handleVote}
+          />
+        );
       })}
     </EmployeeCards>
   );

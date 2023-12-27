@@ -3,6 +3,7 @@ import { ApolloServer } from "@apollo/server";
 import { NextRequest } from "next/server";
 import { gql } from "graphql-tag";
 import { employees } from "@/app/mock";
+import { Employee } from "@/app/types/employee";
 
 const typeDefs = gql`
   type Employee {
@@ -26,8 +27,8 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     employees: () => employees,
-    employee: (_: any, { id }: any) =>
-      employees.find((employee) => employee.id === id),
+    employee: (_: Employee, { id }: { id: number }) =>
+      employees.find((employee: Employee) => employee.id === id),
   },
 };
 
