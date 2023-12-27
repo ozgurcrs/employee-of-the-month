@@ -1,8 +1,8 @@
 "use client";
 import { DetailCard } from "@/app/components/Cards/DetailCard";
-import { CardContainer } from "../../style";
 import { Employee } from "@/app/types/employee";
 import { FC } from "react";
+import { CardContainer } from "./style";
 
 type Props = {
   employee: Employee;

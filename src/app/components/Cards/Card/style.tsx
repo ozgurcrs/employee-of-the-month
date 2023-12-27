@@ -13,6 +13,10 @@ const EmployeeCard = styled.div`
   user-select: none;
   overflow: hidden;
 
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
   & > a > img {
     width: 100%;
     height: 100%;
@@ -24,7 +28,6 @@ const EmployeeCard = styled.div`
   }
 
   &:hover > div.action-button {
-    visibility: visible;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -43,14 +46,31 @@ const EmployeeCard = styled.div`
 `;
 
 const ActionButton = styled.div`
-  visibility: hidden;
   width: 100%;
   position: absolute;
   bottom: -1px;
   transition: 200ms;
+  z-index: 999;
 
   & > svg {
     display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(45, 196, 77);
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    color: white;
+    font-size: 24px;
+    height: 50px;
+
+    & > svg {
+      display: block;
+    }
   }
 `;
 const Score = styled.div`
