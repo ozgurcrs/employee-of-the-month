@@ -4,7 +4,7 @@ import { GET_EMPLOYEES } from "./queries";
 import { ApiResponse, Employee } from "./types/employee";
 
 export default async function Home() {
-  const data: ApiResponse = await client.query({
+  /*   const data: ApiResponse = await client.query({
     query: GET_EMPLOYEES,
   });
 
@@ -12,5 +12,7 @@ export default async function Home() {
 
   return (
     <main>{data.loading ? "Loading" : <Cards employeeList={employees} />}</main>
-  );
+  ); */
+
+  return <main>Hello World</main>;
 }
