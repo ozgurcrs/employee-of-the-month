@@ -1,13 +1,7 @@
-import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
-import fetchPonyfill from "fetch-ponyfill";
-
-const httpLink = new HttpLink({
-  fetch: fetchPonyfill().fetch,
-  uri: `http://127.0.0.1:3000/api/graphql`,
-});
+import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  link: httpLink,
+  uri: `http://localhost:3000/api/graphql`,
   cache: new InMemoryCache(),
 });
 
