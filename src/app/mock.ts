@@ -8,6 +8,9 @@ export const employees: Employee[] = [
     title: "Frontend Developer",
     voteCount: 10,
     image: "https://picsum.photos/id/1/200/300",
+    email: "ozgur.ciris@example.com",
+    phone: "+1234567890",
+    address: "123 Main St, Cityville, Country",
   },
   {
     id: 2,
@@ -16,6 +19,9 @@ export const employees: Employee[] = [
     title: "Backend Developer",
     voteCount: 8,
     image: "https://picsum.photos/id/1/200/300",
+    email: "selin.kaya@example.com",
+    phone: "+9876543210",
+    address: "456 Oak St, Townsville, Country",
   },
   {
     id: 3,
@@ -24,6 +30,9 @@ export const employees: Employee[] = [
     title: "Full Stack Developer",
     voteCount: 7,
     image: "https://picsum.photos/id/1/200/300",
+    email: "mert.demir@example.com",
+    phone: "+1122334455",
+    address: "789 Pine St, Villageland, Country",
   },
   {
     id: 4,
@@ -32,6 +41,9 @@ export const employees: Employee[] = [
     title: "UI/UX Designer",
     voteCount: 6,
     image: "https://picsum.photos/id/1/200/300",
+    email: "asli.yilmaz@example.com",
+    phone: "+9988776655",
+    address: "101 Cedar St, Hamletville, Country",
   },
   {
     id: 5,
@@ -40,6 +52,9 @@ export const employees: Employee[] = [
     title: "Data Scientist",
     voteCount: 5,
     image: "https://picsum.photos/id/1/200/300",
+    email: "emre.aksoy@example.com",
+    phone: "+3344556677",
+    address: "202 Elm St, Riverside, Country",
   },
   {
     id: 6,
@@ -48,6 +63,9 @@ export const employees: Employee[] = [
     title: "Frontend Developer",
     voteCount: 0,
     image: "https://picsum.photos/id/1/200/300",
+    email: "gizem.ergun@example.com",
+    phone: "+1122334455",
+    address: "303 Maple St, Lakeside, Country",
   },
   {
     id: 7,
@@ -56,6 +74,9 @@ export const employees: Employee[] = [
     title: "Backend Developer",
     voteCount: 0,
     image: "https://picsum.photos/id/1/200/300",
+    email: "efe.kurt@example.com",
+    phone: "+9988776655",
+    address: "404 Birch St, Mountainside, Country",
   },
   {
     id: 8,
@@ -64,5 +85,8 @@ export const employees: Employee[] = [
     title: "Full Stack Developer",
     voteCount: 0,
     image: "https://picsum.photos/id/1/200/300",
+    email: "aylin.sahin@example.com",
+    phone: "+3344556677",
+    address: "505 Pine St, Seaside, Country",
   },
 ];

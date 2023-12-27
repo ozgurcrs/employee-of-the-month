@@ -14,7 +14,7 @@ const typeDefs = gql`
     image: String
     email: String
     address: String
-    telefon: String
+    phone: String
   }
 
   type Query {
