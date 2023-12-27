@@ -12,7 +12,7 @@ export default async function Page({ params }: any) {
     },
   });
 
-  const { employee } = data.data;
+  const { employee } = data?.data;
 
   return employee && <EmployeeCard employee={employee} />;
 }

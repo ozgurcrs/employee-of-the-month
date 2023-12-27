@@ -15,10 +15,8 @@ const mockEmployee: Employee = {
 };
 
 test("renders employee details correctly", () => {
-  // Render the component with the mock data
   const { getByText } = render(<DetailCard employee={mockEmployee} />);
 
-  // Check if the rendered content matches the employee details
   expect(
     getByText(`${mockEmployee.firstName} ${mockEmployee.lastName}`)
   ).toBeDefined();

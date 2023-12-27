@@ -8,7 +8,7 @@ export default async function Home() {
     query: GET_EMPLOYEES,
   });
 
-  const { employees }: { employees: Employee[] } = data.data;
+  const { employees }: { employees: Employee[] } = data?.data;
 
   return (
     <main>{data.loading ? "Loading" : <Cards employeeList={employees} />}</main>

@@ -119,6 +119,7 @@ const Medal = styled.div`
   align-items: center;
   font-size: 48px;
   color: #ffd700;
+  z-index: 999;
 `;
 
 const CardContainer = styled.div`

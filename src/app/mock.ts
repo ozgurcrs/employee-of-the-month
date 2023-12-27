@@ -3,8 +3,8 @@ import { Employee } from "./types/employee";
 export const employees: Employee[] = [
   {
     id: 1,
-    firstName: "Özgür",
-    lastName: "Çiriş",
+    firstName: "Nurşin",
+    lastName: "Perişan",
     title: "Frontend Developer",
     voteCount: 10,
     image:
