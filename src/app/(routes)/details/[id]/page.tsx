@@ -5,7 +5,7 @@ import { EmployeeCard } from "./EmployeeCard";
 export default async function Page({ params }: any) {
   const id = Number(params.id);
 
-  const data = await client.query({
+  /*   const data = await client.query({
     query: GET_EMPLOYEE,
     variables: {
       id: id,
@@ -14,7 +14,7 @@ export default async function Page({ params }: any) {
 
   const { employee } = data.data;
 
-  console.log(employee);
+  return employee && <EmployeeCard employee={employee} />; */
 
-  return employee && <EmployeeCard employee={employee} />;
+  return <div>Apollo Without</div>;
 }
